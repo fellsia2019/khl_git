@@ -1,0 +1,392 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@fellsia2019 
+fellsia2019
+/
+khl_f
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+khl_f/index.html
+@fellsia2019
+fellsia2019 window-reg
+Latest commit 2b5673a on 5 May
+ History
+ 1 contributor
+360 lines (317 sloc)  11.4 KB
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Index</title>
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+  }
+    html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #08010e;
+  margin: 0;
+  padding: 0;
+
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  background: -o-linear-gradient(120deg, #0b010c 0%, #1b0242 50%, #0e011df1 50%, #010f07 100%);
+  background: linear-gradient(-30deg, #0b010c 0%, #1b0242 50%, #0e011df1 50%, #010f07 100%);
+}
+
+.container {
+  width: 1000px;
+  padding: 20px 50px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.card {
+  padding: 20px;
+  position: relative;
+  background-color: #100713;
+  overflow: hidden;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 2;
+  pointer-events: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(95, 3, 3, 0.082)), color-stop(15%, rgba(37, 4, 99, 0.068)), color-stop(90%, transparent));
+  background: -o-linear-gradient(top, rgba(95, 3, 3, 0.082) 0%, rgba(37, 4, 99, 0.068) 15%, transparent 90%);
+  background: linear-gradient(to bottom, rgba(95, 3, 3, 0.082) 0%, rgba(37, 4, 99, 0.068) 15%, transparent 90%);
+}
+
+.animate-span {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 0px 25px 2px rgba(255, 0, 13, 0.418);
+  -moz-box-shadow: 0px 0px 25px 2px rgba(255, 0, 13, 0.596);
+  box-shadow: 0px 0px 25px 2px rgba(255, 0, 13, 0.493);
+}
+
+p {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 1.25;
+  margin: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-family: Roboto;
+  margin-top: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card a {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #191919;
+  font-size: 20px;
+  line-height: 1.25;
+  margin: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-family: Roboto;
+  display: inline-block;
+}
+.card a span{
+  margin-left: 5px;
+}
+.card a:hover {
+  color: #9a22fc;
+}
+
+/* #e2103-e */
+
+.animate-span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#e2103e));
+  background: -o-linear-gradient(left, transparent, #e2103e);
+  background: linear-gradient(to right, transparent, #e2103e);
+  -webkit-animation: animateTopRight 2s linear infinite;
+          animation: animateTopRight 2s linear infinite;
+}
+
+@-webkit-keyframes animateTopRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes animateTopRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+.animate-span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#e2103e));
+  background: -o-linear-gradient(top, transparent, #e2103e);
+  background: linear-gradient(to bottom, transparent, #e2103e);
+  -webkit-animation: animateRightBottom 2s linear infinite;
+          animation: animateRightBottom 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes animateRightBottom {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes animateRightBottom {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+.animate-span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#e2103e));
+  background: -o-linear-gradient(right, transparent, #e2103e);
+  background: linear-gradient(to left, transparent, #e2103e);
+  -webkit-animation: animateRightLeft 2s linear infinite;
+          animation: animateRightLeft 2s linear infinite;
+}
+
+@-webkit-keyframes animateRightLeft {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes animateRightLeft {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.animate-span:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#e2103e));
+  background: -o-linear-gradient(bottom, transparent, #e2103e);
+  background: linear-gradient(to top, transparent, #e2103e);
+  -webkit-animation: animateBottomTop 2s linear infinite;
+          animation: animateBottomTop 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes animateBottomTop {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@keyframes animateBottomTop {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+@media (max-width: 1080px) {
+  .wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 20px 10px;
+  }
+
+  .card a {
+    font-size: 14px;
+  }
+}
+</style>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="card">
+                <span class="animate-span"></span>
+                <span class="animate-span"></span>
+                <span class="animate-span"></span>
+                <span class="animate-span"></span>
+               <div class="card-list">
+                <a href="/khl_f/window-reg.html" style="">Окно - Регистрация</a><br>
+                <a href="/khl_f/window-login.html" style="">Окно - Вход </a><br>
+                <a href="/khl_f/window-newpass.html" style="">Окно - Забыл пароль </a><br>
+                <a href="/khl_f/window-newpass2.html" style="">Окно - Забыл пароль по ссылке с почты</a><br>
+
+                <a href="/khl_f/index.html" style="">Главная страница </a><br>
+                <a href="/khl_f/index_new-table.html" style="">Главная страница <span style="color:#e2103e;"> Второй вид таблицы</span></a><br>
+                <a href="/khl_f/index_header-unlogin.html" style="">Главная страница <span style="color:#e2103e;"> unlogin header</span></a><br>
+                <a href="/khl_f/statistics.html" style="">Статистика - Таблицы</a><br>
+                <a href="/khl_f/leaders-page.html" style="">Статистика - Лидеры</a><br>
+                <a href="/khl_f/judges.html" style="">Судьи - Главная</a><br>
+                <a href="/khl_f/judges-2.html" style="">Судьи - Главная <span style="color:#e2103e;"> (в табе "Видео правила два iframe с видео")</span></a><br>
+                <a href="/khl_f/judges-detail.html" style="">Судьи - детали</a><br>
+                <a href="/khl_f/videoPage-main.html" style="">Видео - Главная</a><br>
+                <a href="/khl_f/videoPage-detail.html" style="">Видео - Детали</a><br>
+                <a href="/khl_f/calendar.html" style="">Календарь - Календарь</a><br>
+                <a href="/khl_f/preview.html" style="">Календарь- Превью</a><br>
+                <a href="/khl_f/preview-matchNow.html" style="">Календарь - Превью(Регулярные матчи)</a><br>
+                <a href="/khl_f/profile-main.html" style="">Профиль - Мой профиль</a><br>
+                <a href="/khl_f/profile-help.html" style="">Профиль - Помощь</a><br>
+                <a href="/khl_f/profile-policy.html" style="">Профиль - Соглашение</a><br>
+                <a href="/khl_f/profile-myBroadcasts.html" style="">Профиль - Мои трансляции 
+                    и подписки</a><br>
+                <a href="/khl_f/profile-report.html" style="">Профиль - Сообщить о проблеме</a><br>
+                <a href="/khl_f/profile-testBroadcast.html" style="">Профиль - Проверка трансляции</a><br>
+                <a href="/khl_f/profile-subscriptions.html" style="">Профиль - Подписки</a><br>
+        
+                <a href="/khl_f/clubs.html" style="">Клубы - Главная</a><br>
+                <a href="/khl_f/clubs-detail.html" style="">Клубы - Детали(3 экрана - Детали, Состав, Арена)</a><br>
+        
+                <a href="/khl_f/players.html" style="">Игроки - Главная ( с фильтром)</a><br>
+                <a href="/khl_f/players-detail.html" style="">Игроки - Детали</a><br>
+                <a href="/khl_f/players-comparison.html" style="">Игроки - Сравнение</a><br>
+        
+                <a href="/khl_f/tablesPage.html" style="">Таблицы - Результаты Play-Off</a><br>
+                <a href="/khl_f/tablesPage-2.html" style="">Таблицы - Результаты Итоги чемпионата</a><br>
+        
+                <a href="/khl_f/newsPage.html" style="">Новости - Главная</a><br>
+                <a href="/khl_f/newsDetail.html" style="">Новости - Детали</a><br>
+                <a href="/khl_f/newsInterview.html" style="">Новости - Итоги чемпионата</a><br>
+        
+                <a href="/khl_f/dayOverview.html" style="">Новости - обзор дня</a><br>
+                <a href="/khl_f/previewDay.html" style="">Новости - Превью дня</a><br>
+        
+                <a href="/khl_f/khlTV.html" style="">Новые - КХЛ ТВ</a><br>
+                <a href="/khl_f/aboutleague.html" style="">Новые - О лиге</a><br>
+                <a href="/khl_f/tickets.html" style="">Новые - Билеты</a><br>
+                <a href="/khl_f/textSpreading.html" style="">Новые - Текстовая разводящая</a><br>
+                <a href="/khl_f/textSpreading-2.html" style="">Новые - Текстовая разводящая (вариант2)</a><br>
+               </div>
+            </div>
+        </div>
+        <p>
+            by @ar69tem
+        </p>
+    </div>
+    
+</body>
+</html>
